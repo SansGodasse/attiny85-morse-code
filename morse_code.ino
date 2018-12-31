@@ -224,6 +224,86 @@ void translateChar(char character) {
             bip();
             bip();
             break;
+// Chiffres
+        case '0':
+            lgBip();
+            lgBip();
+            lgBip();
+            lgBip();
+            lgBip();
+            break;
+
+        case '1':
+            bip();
+            lgBip();
+            lgBip();
+            lgBip();
+            lgBip();
+            break;
+
+        case '2':
+            bip();
+            bip();
+            lgBip();
+            lgBip();
+            lgBip();
+            break;
+
+        case '3':
+            bip();
+            bip();
+            bip();
+            lgBip();
+            lgBip();
+            break;
+
+        case '4':
+            bip();
+            bip();
+            bip();
+            bip();
+            lgBip();
+            break;
+
+        case '5':
+            bip();
+            bip();
+            bip();
+            bip();
+            bip();
+            break;
+
+        case '6':
+            bip();
+            bip();
+            bip();
+            bip();
+            lgBip();
+            break;
+
+        case '7':
+            bip();
+            bip();
+            bip();
+            lgBip();
+            lgBip();
+            break;
+          
+        case '8':
+            bip();
+            bip();
+            lgBip();
+            lgBip();
+            lgBip();
+            break;
+
+        case '9':
+            bip();
+            lgBip();
+            lgBip();
+            lgBip();
+            lgBip();
+            break;
     }
 
     charSpace();
@@ -240,7 +320,7 @@ void translateWord(char *word) {
     int i, size = strlen(word);
 
     for (i = 0 ; i < size ; i++) {
-    translateChar(word[i]);
+        translateChar(word[i]);
     }
 
     wordSpace();
@@ -263,9 +343,13 @@ void setup() {
 void loop() {
 
     char word1[] = "hello";
-    translateWord(word1);
+    // translateWord(word1);
     char word2[] = "world";
-    translateWord(word2);
+    // translateWord(word2);
     char sos[] = "sos";
     //translateWord(sos);
+    char number1[] = "0";
+    translateWord(number1);
+    char number2[] = "5";
+    translateWord(number2);
 }
